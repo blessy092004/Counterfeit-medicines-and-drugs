@@ -1,13 +1,8 @@
-// AddMedicine.js
-
 import React, { useState } from 'react';
-
-const medicineList = []; // ✅ Named export
-
+const medicineList = []; 
 function AddMedicine() {
   const [name, setName] = useState('');
   const [code, setCode] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault();
     medicineList.push({ name, code });
